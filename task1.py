@@ -19,7 +19,6 @@ import operator
 
 n = int(input('Введите число: '))
 
-def get_composition(n):
-    return list(accumulate([a for a in range(1, n + 1)], operator.mul))
+list(accumulate([a for a in range(1, n + 1)], operator.mul))
 
-print(f"Набор произведений чисел от 1 до {n}: {get_composition(n)}")
+print(f"Набор произведений чисел от 1 до {n}: {list(accumulate([a for a in range(1, n + 1)], operator.mul))}")
